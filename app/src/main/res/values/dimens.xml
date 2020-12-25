@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="pic_20dp">20dp</dimen>
+    <dimen name="pic_25dp">25dp</dimen>
+    <dimen name="pic_30dp">30dp</dimen>
+    <dimen name="pic_40dp">40dp</dimen>
+    <dimen name="pic_50dp">50dp</dimen>
+
+
+    <!-- 字体大小 -->
+
+</resources>

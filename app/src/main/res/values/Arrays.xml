@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="title">
+        <item>首页</item>
+        <item>消息</item>
+        <item></item>
+        <item>消息</item>
+        <item>消息</item>
+    </string-array>
+
+    <integer-array name="selected">
+        <item>@mipmap/tab_home_select</item>
+        <item>@mipmap/tab_home_select</item>
+        <item>@mipmap/tab_home_select</item>
+        <item>@mipmap/tab_home_select</item>
+        <item>@mipmap/tab_home_select</item>
+    </integer-array>
+
+    <integer-array name="unselected">
+        <item>@mipmap/tab_home_unselect</item>
+        <item>@mipmap/tab_home_unselect</item>
+        <item>@mipmap/tab_home_unselect</item>
+        <item>@mipmap/tab_home_unselect</item>
+        <item>@mipmap/tab_home_unselect</item>
+    </integer-array>
+
+    <string-array name="sett_title">
+        <item>首页</item>
+        <item>消息</item>
+        <item>消息</item>
+        <item>我的</item>
+        <item>首页</item>
+        <item>消息</item>
+        <item>消息</item>
+
+
+    </string-array>
+
+    <integer-array name="set_ico">
+        <item>@mipmap/admit</item>
+        <item>@mipmap/driving</item>
+        <item>@mipmap/mate</item>
+        <item>@mipmap/show</item>
+        <item>@mipmap/trends</item>
+        <item>@mipmap/icon_banxing</item>
+        <item>@mipmap/icon_comp_check</item>
+
+    </integer-array>
+</resources>

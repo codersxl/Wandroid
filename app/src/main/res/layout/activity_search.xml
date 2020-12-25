@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pic_50dp"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+      >
+
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/pic_20dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/editor_bg"
+            >
+            <EditText
+                android:id="@+id/search_text"
+                android:paddingLeft="10dp"
+                android:drawableLeft="@mipmap/search"
+                android:drawablePadding="30dp"
+                android:layout_width="match_parent"
+                android:hint="输入要搜送的内容"
+                android:layout_height="match_parent"
+                android:singleLine="true"
+                android:background="@null"
+                />
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/detele"
+                android:gravity="center"
+                android:src="@mipmap/icon_delete"
+                android:layout_width="@dimen/pic_20dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:contentDescription="TODO" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="搜索"
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热词"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <com.example.Wandroid.utils.FlowTextLayout
+        android:id="@+id/search_hotword"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/histroy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="历史"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <ImageView
+            android:layout_width="@dimen/pic_40dp"
+            android:layout_height="@dimen/pic_40dp"
+            android:layout_alignParentRight="true"
+             android:src="@mipmap/icon_del"
+            android:layout_marginRight="10dp"
+            android:id="@+id/del_histery"
+            android:contentDescription="TODO" />
+    </RelativeLayout>
+
+
+    <com.example.Wandroid.utils.FlowTextLayout
+        android:id="@+id/histroy_hotword"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" />
+
+
+    <com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tkrefreshlayout"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recy_reslt"
+            />
+    </com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>
+
+</LinearLayout>

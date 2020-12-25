@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <TextView
+            android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/titles"
+             android:textSize="@dimen/pic_25dp"
+             android:text="常用"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titles_rcyview"
+        android:textSize="@dimen/pic_25dp"
+        android:text="常用"
+        />
+</LinearLayout>
